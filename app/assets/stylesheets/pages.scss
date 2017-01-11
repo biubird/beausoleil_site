@@ -4,16 +4,34 @@
 .pages {
   .about-image {
     width: 100%;
-    margin-top: 20px;
+    // margin-top: 10px;
   }
 }
 .nav-image {
-    width: 50px;
-    height: 50px;
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 .navbar {
   background-color: black;
+  height: 50px;
 }
-button {
-  background-color: #ffa500;
+.navbar-text {
+  float: right;
+  margin: auto;
+}
+.jumbotron {
+  position: relative;
+  background: url(../assets/portfolio/StageShotJazzFest2016.jpg) center center;
+  width: 100%;
+  background-size: cover;
+  height: 600px;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.panel-heading {
+  width: 100%;
+  background-color: blue;
+  overflow: visible;
 }
