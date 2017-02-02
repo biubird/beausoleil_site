@@ -1,0 +1,27 @@
+<% @tours.each do |tour| %>
+<div class="container-fluid">
+<div class="row-fluid">
+  <div class="col-xs-4">
+    <div class="tour-date">
+    <h3><span class="glyphicon glyphicon-time"></span></h3>
+    <h4><%= tour.date_time -%></h4>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="tour-location">
+    <h3><span class="glyphicon glyphicon-map-marker icon-white"></span></h3>
+    <h4><%= tour.venue -%></h4>
+    <h4><%= tour.location -%></h4>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="tour-ticket">
+      <a href="<%= tour.imgUrl -%>" class="thumbnail">
+      <img src="<%= tour.img -%>" />
+      <h4>Tickets</h4>
+      </a>
+    </div>
+  </div>
+ </div>
+ </div>
+<% end %>

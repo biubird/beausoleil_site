@@ -1,37 +1,402 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  font-family: 'Oswald', sans-serif;
+}
 .pages {
   .about-image {
     width: 100%;
-    // margin-top: 10px;
   }
 }
-.nav-image {
-    width: 300px;
-    height: 300px;
-    margin-left: 30px;
+.carousel-inner {
+  height: auto;
+  background-color: black;
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  height: auto;
+}
+.item.active img {
+  width: 100%;
+  height: auto;
+}
+.nav-image img {
+    width: 280px;
+    height: 280px;
+    margin-left: 20px;
     margin-top: 10px;
+    position: fixed;
 }
 .navbar {
+  width: 100%;
   background-color: black;
   height: 50px;
 }
-.navbar-text {
-  float: right;
-  margin: auto;
+.nav {
+  font-size: 18px;
+  color: slategray;//not working
 }
-.jumbotron {
-  position: relative;
-  background: url(../assets/portfolio/StageShotJazzFest2016.jpg) center center;
-  width: 100%;
-  background-size: cover;
-  height: 600px;
-  overflow: hidden;
-  margin-bottom: 0px;
+.navbar-header {
+  width: auto;
+  margin-top: 10px;
+}
+.navbar-header h3 {
+  margin-left: 150px;
+  font-style: italic;
+  font-family: cursive;
+  font-stretch: semi-expanded;
+  color: #ff4500;
+  font-size: 30px;
+  display: inline;
+  margin-top: 10px;
 }
 .panel-heading {
   width: 100%;
-  background-color: blue;
+  margin: auto;
   overflow: visible;
+}
+.panel-heading h2 {
+  color: #ff4500;
+  font-weight: bolder;
+  padding-bottom: 30px;
+}
+.panel {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  background-color: black;
+  color: slategrey;
+  padding: 10px;
+}
+.panel-body {
+  background-color: slategrey;
+  color: black;
+}
+.panel-body.container {
+  height: 100px;
+}
+.thumbnail {
+  img {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    border: 10px solid black;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+}
+a.thumbnail {
+  background-color: slategrey;
+  border: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.tour-date {
+  width: 90%;
+}
+.tour-location {
+  width: 90%;
+}
+.tour-ticket {
+  width: 90%;
+}
+.about {
+  background-color: #f0e68c;
+  height: auto;
+}
+.about p {
+  margin-left: 40px;
+  line-height: 24px;
+}
+.about-image {
+  width: 90%;
+  margin-top: 10px;
+  border: 5px solid slategrey;
+  margin-bottom: 10px;
+}
+.about-text p {
+  width: 95%;
+  margin-top: 20px;
+  line-height: 24px;
+  font-size: 18px;
+  color: slategrey;
+}
+.bamako {
+  display: inline-block;
+  width: 100%;
+}
+.bamako p {
+  display: inline-block;
+  line-height: 24px;
+  width: 60%;
+  margin-top: 20px;
+  font-size: 18px;
+  color: slategrey;
+  padding-left: 20px;
+}
+.bamako img {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.about-michael {
+  display: inline-block;
+  margin-top: 20px;
+}
+.about-michael img {
+  display: inline-block;
+  margin-right: 75px;
+  margin-top: 20px;
+  width: 380px;
+  height: auto;
+  float: right;
+  border: 2px solid slategray;
+}
+.about-michael p {
+  margin-top: 20px;
+  display: inline-block;
+  width: 55%;
+  line-height: 24px;
+  font-size: 18px;
+  color: slategray;
+}
+.about-old {
+  display: inline-block;
+  margin-top: 20px;
+  line-height: 24px;
+  font-size: 18px;
+}
+.about-old img {
+  display: inline-block;
+  width: 400px;
+  height: auto;
+  margin-left: 20px;
+}
+.old-1 {
+  margin-left: 20px;
+  display: inline-block;
+  transform: rotate(-7deg);
+  overflow: visible;
+}
+.old-2 {
+  display: inline-block;
+  transform: rotate(7deg);
+  overflow: visible;
+}
+.band {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  vertical-align: top;
+}
+.band-bio {
+  display: inline-block;
+  width: 175px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.band h4, h3 {
+  line-height: 24px;
+  margin-left: 10px;
+}
+.band img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+.band-bill {
+  display: inline-block;
+  width: 225px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.band-mitch {
+  display: inline-block;
+  width: 225px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.band-david {
+  display: inline-block;
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.press {
+  background-color: #f0e68c;
+  height: auto;
+}
+.short {
+  margin: 20px 30px 40px 320px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f5f5f5;
+  line-height: normal;
+  text-align: left;
+}
+.short h3 {
+  color: #696969;
+  line-height: 30px;
+}
+.media_quotes {
+  margin-top: 30px;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.media_quotes h4 {
+  line-height: 20px;
+}
+hr {
+  width: 30%;
+}
+.media_photos img {
+  width: 25%;
+  margin-left: 60px;
+  margin-top: 20px;
+  padding: 10px;
+  display: inline;
+}
+.media_photos {
+  display: inline;
+}
+.news_logos img {
+  width: 350px;
+  height: auto;
+  padding: 20px;
+}
+.news_logos {
+  display: inline;
+  margin-right: 10px;
+}
+.news_logos h3 {
+  margin-left: 40px;
+}
+.row_awards {
+  width: 100%;
+  margin-left: 20px;
+}
+.awards {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  margin-left: 10px;
+  vertical-align: top;
+  padding: 60px;
+}
+.awards img {
+  margin-left: 40px;
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.media {
+  background-color: #f0e68c;
+  height: auto;
+  width: 100%;
+}
+.media h3 {
+  color: #696969;
+  line-height: 30px;
+  width: 50%;
+  display: inline-block;
+}
+.media-links {
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 300px;
+  margin-right: 50px;
+}
+.media-links img {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  border: 5px solid slategrey;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.media-links h3 {
+  display: inline-block;
+  margin-left: 40px;
+}
+.audio-player {
+  display: inline-block;
+  margin-left: 40px;
+}
+.video-frame {
+  margin-left: 100px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+.discography {
+  width: 100%;
+  background-color: #f0e68c;
+  height: 1000px;
+}
+.discography h3 {
+  // color: #696969;
+  line-height: 30px;
+  width: 50%;
+  float: right;
+  margin-right: 100px;
+  // display: inline-block;
+}
+.discography img {
+  // margin-top: 100px;
+  // margin-left: 40px;
+  // width: 90%;
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  float: right;
+  margin-right: 50px;
+}
+.contact {
+  background-color: #f0e68c;
+  height: auto;
+}
+.contact-image img {
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  float: right;
+  margin-right: 50px;
+  // margin-left: 150px;
+}
+.dynamic {
+  display: inline-block;
+  margin-top: 40px;
+  float: right;
+  margin-right: 75px;
+  width: 70%;
+}
+.dynamic img {
+  width: 250px;
+}
+.social {
+  width: 70%;
+  vertical-align: top;
+  margin-top: 40px;
+  float: right;
+  margin-right: 75px;
+  margin-bottom: 100px;
+}
+.social img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
 }

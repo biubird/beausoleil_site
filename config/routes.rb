@@ -4,7 +4,11 @@ Rails.application.routes.draw do
 
   get 'about' => "pages#about", as: :about
 
-  get 'dates'=> "pages#dates", as: :dates
+  get 'media'=> "pages#media", as: :media
+
+  get 'press' => "pages#press", as: :press
+
+  get 'discography' => "pages#discography", as: :discography
 
   get 'contact' => "pages#contact", as: :contact
 
