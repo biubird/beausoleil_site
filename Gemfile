@@ -13,6 +13,8 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
+gem 'unicorn'
+
 gem 'sass-rails', '~> 5.0'
 
 gem 'react-rails', github: 'reactjs/react-rails'
