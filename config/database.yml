@@ -50,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: beausoleil_site_production
-  username: beausoleil_site
-  password: <%= ENV['BEAUSOLEIL_SITE_DATABASE_PASSWORD'] %>
+  # database: beausoleil_site_production
+  # username: beausoleil_site
+  # password: <%= ENV['BEAUSOLEIL_SITE_DATABASE_PASSWORD'] %>
